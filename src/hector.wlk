@@ -12,6 +12,9 @@ object hector {
 	method plantarTrigo(){
 		game.addVisual(new Trigo(position= self.position()))
 	}
+	method plantarTomaco() {
+		game.addVisual(new Tomaco(position= self.position()))
+	}
 	method regarPlanta() {
 		// el collider siempre devuleve una coleccion, aunque este vacia
 		game.colliders(self).forEach({ planta => planta.regate()})
@@ -24,5 +27,8 @@ object hector {
 	}
 	method cantidadDePlantasCosechadas() {
 		return plantasCosechadas.size()
+	}
+	method venderCosecha() {
+		
 	}
 }
