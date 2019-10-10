@@ -10,7 +10,7 @@ object este {
 	} 	
 }
 
-/*object oeste { // chequear
+object oeste { // chequear
 	method siguientePosicion(position){
 		if (position.x() == 0 ){
 			return position
@@ -18,7 +18,7 @@ object este {
 			return position.left(1)
 		}
 	}
-}*/
+}
 
 object norte {
 	method siguientePosicion(position){
@@ -26,6 +26,16 @@ object norte {
 			return position
 		} else {
 			return position.up(1)
+		}
+	}
+}
+
+object sur {
+	method siguientePosicion(position){
+		if (position.y() == 00 ){
+			return position
+		} else {
+			return position.down(1)
 		}
 	}
 }

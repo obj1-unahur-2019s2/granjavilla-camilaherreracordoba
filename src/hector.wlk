@@ -1,5 +1,6 @@
 import wollok.game.*
 import cultivos.*
+import direcciones.*
 
 object hector {
 	var property position = new Position(x = 3, y = 3)
@@ -30,5 +31,9 @@ object hector {
 	}
 	method venderCosecha() {
 		
+	}
+	
+	method mover(direccion) {
+		position = direccion.siguientePosicion(position)
 	}
 }
